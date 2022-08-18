@@ -74,7 +74,7 @@ export const TaskList = () => {
 		<div className='list-items' data-testid="success" key={"success"}>
 			{tasks.map((task) => (
 				<Task
-					key={task.key}
+					key={task.id}
 					task={task}
 					onPinTask={(task) => pinTask(task)}
 					onArchiveTask={(task) => archiveTask(task)}
